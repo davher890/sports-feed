@@ -1,0 +1,90 @@
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"The next fixture is  3","time":"2016-10-17T20:08:38.315Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 19:45:00 Executing in  70582000","time":"2016-10-17T20:08:38.330Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 20:40:00 Executing in  73882000","time":"2016-10-17T20:08:38.331Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 20:45:00--CSKA Moscow - AS Monaco FC *1 hour*  *5 minutes* ","time":"2016-10-17T20:08:38.331Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 19:45:00 Executing in  70582000","time":"2016-10-17T20:08:38.332Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 20:40:00 Executing in  73882000","time":"2016-10-17T20:08:38.332Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 20:45:00--Leicester City FC - FC Copenhagen *1 hour*  *5 minutes* ","time":"2016-10-17T20:08:38.333Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 19:45:00 Executing in  70582000","time":"2016-10-17T20:08:38.333Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 20:40:00 Executing in  73882000","time":"2016-10-17T20:08:38.333Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 20:45:00--Club Brugge - FC Porto *1 hour*  *5 minutes* ","time":"2016-10-17T20:08:38.333Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 19:45:00 Executing in  70582000","time":"2016-10-17T20:08:38.333Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 20:40:00 Executing in  73882000","time":"2016-10-17T20:08:38.334Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 20:45:00--Olympique Lyonnais - Juventus Turin *1 hour*  *5 minutes* ","time":"2016-10-17T20:08:38.334Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 19:45:00 Executing in  70582000","time":"2016-10-17T20:08:38.335Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 20:40:00 Executing in  73882000","time":"2016-10-17T20:08:38.335Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 20:45:00--GNK Dinamo Zagreb - Sevilla FC *1 hour*  *5 minutes* ","time":"2016-10-17T20:08:38.335Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 19:45:00 Executing in  70582000","time":"2016-10-17T20:08:38.336Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 20:40:00 Executing in  73882000","time":"2016-10-17T20:08:38.337Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 20:45:00--Real Madrid CF - Legia Warszawa *1 hour*  *5 minutes* ","time":"2016-10-17T20:08:38.337Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 19:45:00 Executing in  70582000","time":"2016-10-17T20:08:38.338Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 20:40:00 Executing in  73882000","time":"2016-10-17T20:08:38.339Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 20:45:00--Sporting CP - Borussia Dortmund *1 hour*  *5 minutes* ","time":"2016-10-17T20:08:38.339Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 19:45:00 Executing in  70582000","time":"2016-10-17T20:08:38.340Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 20:40:00 Executing in  73882000","time":"2016-10-17T20:08:38.340Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 20:45:00--Bayer Leverkusen - Tottenham Hotspur FC *1 hour*  *5 minutes* ","time":"2016-10-17T20:08:38.340Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 20:45:00 Executing in  74182000","time":"2016-10-17T20:08:38.341Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"19 10 2016 - 19:45:00 Executing in  156982000","time":"2016-10-17T20:08:38.341Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"19 10 2016 - 20:40:00 Executing in  160282000","time":"2016-10-17T20:08:38.342Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"19 10 2016 - 20:45:00--Arsenal FC - Ludogorez Rasgrad *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-17T20:08:38.342Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 20:45:00 Executing in  74182000","time":"2016-10-17T20:08:38.342Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"19 10 2016 - 19:45:00 Executing in  156982000","time":"2016-10-17T20:08:38.342Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"19 10 2016 - 20:40:00 Executing in  160282000","time":"2016-10-17T20:08:38.342Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"19 10 2016 - 20:45:00--FC Rostov - Club Atlético de Madrid *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-17T20:08:38.342Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 20:45:00 Executing in  74182000","time":"2016-10-17T20:08:38.344Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"19 10 2016 - 19:45:00 Executing in  156982000","time":"2016-10-17T20:08:38.344Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"19 10 2016 - 20:40:00 Executing in  160282000","time":"2016-10-17T20:08:38.345Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"19 10 2016 - 20:45:00--FC Barcelona - Manchester City FC *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-17T20:08:38.345Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 20:45:00 Executing in  74182000","time":"2016-10-17T20:08:38.345Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"19 10 2016 - 19:45:00 Executing in  156982000","time":"2016-10-17T20:08:38.345Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"19 10 2016 - 20:40:00 Executing in  160282000","time":"2016-10-17T20:08:38.345Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"19 10 2016 - 20:45:00--Celtic FC - Bor. Mönchengladbach *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-17T20:08:38.345Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 20:45:00 Executing in  74182000","time":"2016-10-17T20:08:38.346Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"19 10 2016 - 19:45:00 Executing in  156982000","time":"2016-10-17T20:08:38.346Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"19 10 2016 - 20:40:00 Executing in  160282000","time":"2016-10-17T20:08:38.347Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"19 10 2016 - 20:45:00--Paris Saint-Germain - FC Basel *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-17T20:08:38.347Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 20:45:00 Executing in  74182000","time":"2016-10-17T20:08:38.347Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"19 10 2016 - 19:45:00 Executing in  156982000","time":"2016-10-17T20:08:38.347Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"19 10 2016 - 20:40:00 Executing in  160282000","time":"2016-10-17T20:08:38.348Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"19 10 2016 - 20:45:00--SSC Napoli - Besiktas JK *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-17T20:08:38.348Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 20:45:00 Executing in  74182000","time":"2016-10-17T20:08:38.348Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"19 10 2016 - 19:45:00 Executing in  156982000","time":"2016-10-17T20:08:38.349Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"19 10 2016 - 20:40:00 Executing in  160282000","time":"2016-10-17T20:08:38.349Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"19 10 2016 - 20:45:00--Dynamo Kyiv - SL Benfica *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-17T20:08:38.349Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"18 10 2016 - 20:45:00 Executing in  74182000","time":"2016-10-17T20:08:38.349Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"19 10 2016 - 19:45:00 Executing in  156982000","time":"2016-10-17T20:08:38.349Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"19 10 2016 - 20:40:00 Executing in  160282000","time":"2016-10-17T20:08:38.349Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7344,"level":30,"msg":"19 10 2016 - 20:45:00--FC Bayern München - PSV Eindhoven *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-17T20:08:38.349Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"The next fixture is  3","time":"2016-10-18T19:25:54.557Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"18 10 2016 - 20:45:00--CSKA Moscow - AS Monaco FC","time":"2016-10-18T19:25:54.568Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"18 10 2016 - 20:45:00--Leicester City FC - FC Copenhagen","time":"2016-10-18T19:25:54.569Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"18 10 2016 - 20:45:00--Club Brugge - FC Porto","time":"2016-10-18T19:25:54.569Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"18 10 2016 - 20:45:00--Olympique Lyonnais - Juventus Turin","time":"2016-10-18T19:25:54.569Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"18 10 2016 - 20:45:00--GNK Dinamo Zagreb - Sevilla FC","time":"2016-10-18T19:25:54.570Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"18 10 2016 - 20:45:00--Real Madrid CF - Legia Warszawa","time":"2016-10-18T19:25:54.570Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"18 10 2016 - 20:45:00--Sporting CP - Borussia Dortmund","time":"2016-10-18T19:25:54.570Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"18 10 2016 - 20:45:00--Bayer Leverkusen - Tottenham Hotspur FC","time":"2016-10-18T19:25:54.571Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"19 10 2016 - 19:45:00 Executing in  73146000","time":"2016-10-18T19:25:54.572Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"19 10 2016 - 20:40:00 Executing in  76446000","time":"2016-10-18T19:25:54.573Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"19 10 2016 - 20:45:00--Arsenal FC - Ludogorez Rasgrad *1 hour*  *5 minutes* ","time":"2016-10-18T19:25:54.573Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"19 10 2016 - 19:45:00 Executing in  73146000","time":"2016-10-18T19:25:54.573Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"19 10 2016 - 20:40:00 Executing in  76446000","time":"2016-10-18T19:25:54.574Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"19 10 2016 - 20:45:00--FC Rostov - Club Atlético de Madrid *1 hour*  *5 minutes* ","time":"2016-10-18T19:25:54.574Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"19 10 2016 - 19:45:00 Executing in  73146000","time":"2016-10-18T19:25:54.574Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"19 10 2016 - 20:40:00 Executing in  76446000","time":"2016-10-18T19:25:54.575Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"19 10 2016 - 20:45:00--FC Barcelona - Manchester City FC *1 hour*  *5 minutes* ","time":"2016-10-18T19:25:54.576Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"19 10 2016 - 19:45:00 Executing in  73146000","time":"2016-10-18T19:25:54.576Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"19 10 2016 - 20:40:00 Executing in  76446000","time":"2016-10-18T19:25:54.577Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"19 10 2016 - 20:45:00--Celtic FC - Bor. Mönchengladbach *1 hour*  *5 minutes* ","time":"2016-10-18T19:25:54.577Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"19 10 2016 - 19:45:00 Executing in  73146000","time":"2016-10-18T19:25:54.579Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"19 10 2016 - 20:40:00 Executing in  76446000","time":"2016-10-18T19:25:54.579Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"19 10 2016 - 20:45:00--Paris Saint-Germain - FC Basel *1 hour*  *5 minutes* ","time":"2016-10-18T19:25:54.579Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"19 10 2016 - 19:45:00 Executing in  73146000","time":"2016-10-18T19:25:54.580Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"19 10 2016 - 20:40:00 Executing in  76446000","time":"2016-10-18T19:25:54.580Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"19 10 2016 - 20:45:00--SSC Napoli - Besiktas JK *1 hour*  *5 minutes* ","time":"2016-10-18T19:25:54.580Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"19 10 2016 - 19:45:00 Executing in  73146000","time":"2016-10-18T19:25:54.581Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"19 10 2016 - 20:40:00 Executing in  76446000","time":"2016-10-18T19:25:54.581Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"19 10 2016 - 20:45:00--Dynamo Kyiv - SL Benfica *1 hour*  *5 minutes* ","time":"2016-10-18T19:25:54.581Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"19 10 2016 - 19:45:00 Executing in  73146000","time":"2016-10-18T19:25:54.582Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"19 10 2016 - 20:40:00 Executing in  76446000","time":"2016-10-18T19:25:54.582Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":7225,"level":30,"msg":"19 10 2016 - 20:45:00--FC Bayern München - PSV Eindhoven *1 hour*  *5 minutes* ","time":"2016-10-18T19:25:54.583Z","v":0}

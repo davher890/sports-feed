@@ -1,0 +1,82 @@
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"The next fixture is  9","time":"2016-10-17T20:09:23.392Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"21 10 2016 - 13:30:00 Executing in  307237000","time":"2016-10-17T20:09:23.407Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 12:30:00 Executing in  390037000","time":"2016-10-17T20:09:23.408Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 13:25:00 Executing in  393337000","time":"2016-10-17T20:09:23.408Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 13:30:00--AFC Bournemouth - Tottenham Hotspur FC *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-17T20:09:23.408Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"21 10 2016 - 16:00:00 Executing in  316237000","time":"2016-10-17T20:09:23.409Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 15:00:00 Executing in  399037000","time":"2016-10-17T20:09:23.409Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 15:55:00 Executing in  402337000","time":"2016-10-17T20:09:23.410Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 16:00:00--Arsenal FC - Middlesbrough FC *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-17T20:09:23.410Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"21 10 2016 - 16:00:00 Executing in  316237000","time":"2016-10-17T20:09:23.410Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 15:00:00 Executing in  399037000","time":"2016-10-17T20:09:23.410Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 15:55:00 Executing in  402337000","time":"2016-10-17T20:09:23.410Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 16:00:00--Burnley FC - Everton FC *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-17T20:09:23.410Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"21 10 2016 - 16:00:00 Executing in  316237000","time":"2016-10-17T20:09:23.411Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 15:00:00 Executing in  399037000","time":"2016-10-17T20:09:23.412Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 15:55:00 Executing in  402337000","time":"2016-10-17T20:09:23.412Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 16:00:00--Hull City FC - Stoke City FC *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-17T20:09:23.412Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"21 10 2016 - 16:00:00 Executing in  316237000","time":"2016-10-17T20:09:23.414Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 15:00:00 Executing in  399037000","time":"2016-10-17T20:09:23.414Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 15:55:00 Executing in  402337000","time":"2016-10-17T20:09:23.415Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 16:00:00--Leicester City FC - Crystal Palace FC *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-17T20:09:23.415Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"21 10 2016 - 16:00:00 Executing in  316237000","time":"2016-10-17T20:09:23.416Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 15:00:00 Executing in  399037000","time":"2016-10-17T20:09:23.417Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 15:55:00 Executing in  402337000","time":"2016-10-17T20:09:23.417Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 16:00:00--Swansea City FC - Watford FC *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-17T20:09:23.417Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"21 10 2016 - 16:00:00 Executing in  316237000","time":"2016-10-17T20:09:23.418Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 15:00:00 Executing in  399037000","time":"2016-10-17T20:09:23.418Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 15:55:00 Executing in  402337000","time":"2016-10-17T20:09:23.419Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 16:00:00--West Ham United FC - Sunderland AFC *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-17T20:09:23.419Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"21 10 2016 - 18:30:00 Executing in  325237000","time":"2016-10-17T20:09:23.419Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 17:30:00 Executing in  408037000","time":"2016-10-17T20:09:23.420Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 18:25:00 Executing in  411337000","time":"2016-10-17T20:09:23.420Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 18:30:00--Liverpool FC - West Bromwich Albion FC *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-17T20:09:23.420Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 14:30:00 Executing in  397237000","time":"2016-10-17T20:09:23.421Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"23 10 2016 - 13:30:00 Executing in  480037000","time":"2016-10-17T20:09:23.422Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"23 10 2016 - 14:25:00 Executing in  483337000","time":"2016-10-17T20:09:23.422Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"23 10 2016 - 14:30:00--Manchester City FC - Southampton FC *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-17T20:09:23.422Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"22 10 2016 - 17:00:00 Executing in  406237000","time":"2016-10-17T20:09:23.423Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"23 10 2016 - 16:00:00 Executing in  489037000","time":"2016-10-17T20:09:23.423Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"23 10 2016 - 16:55:00 Executing in  492337000","time":"2016-10-17T20:09:23.424Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":10723,"level":30,"msg":"23 10 2016 - 17:00:00--Chelsea FC - Manchester United FC *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-17T20:09:23.424Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"The next fixture is  9","time":"2016-10-18T19:25:53.086Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"21 10 2016 - 13:30:00 Executing in  223447000","time":"2016-10-18T19:25:53.098Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 12:30:00 Executing in  306247000","time":"2016-10-18T19:25:53.100Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 13:25:00 Executing in  309547000","time":"2016-10-18T19:25:53.100Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 13:30:00--AFC Bournemouth - Tottenham Hotspur FC *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-18T19:25:53.100Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"21 10 2016 - 16:00:00 Executing in  232447000","time":"2016-10-18T19:25:53.101Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 15:00:00 Executing in  315247000","time":"2016-10-18T19:25:53.101Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 15:55:00 Executing in  318547000","time":"2016-10-18T19:25:53.101Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 16:00:00--Arsenal FC - Middlesbrough FC *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-18T19:25:53.101Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"21 10 2016 - 16:00:00 Executing in  232447000","time":"2016-10-18T19:25:53.102Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 15:00:00 Executing in  315247000","time":"2016-10-18T19:25:53.102Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 15:55:00 Executing in  318547000","time":"2016-10-18T19:25:53.102Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 16:00:00--Burnley FC - Everton FC *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-18T19:25:53.102Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"21 10 2016 - 16:00:00 Executing in  232447000","time":"2016-10-18T19:25:53.103Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 15:00:00 Executing in  315247000","time":"2016-10-18T19:25:53.103Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 15:55:00 Executing in  318547000","time":"2016-10-18T19:25:53.104Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 16:00:00--Hull City FC - Stoke City FC *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-18T19:25:53.104Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"21 10 2016 - 16:00:00 Executing in  232447000","time":"2016-10-18T19:25:53.106Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 15:00:00 Executing in  315247000","time":"2016-10-18T19:25:53.106Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 15:55:00 Executing in  318547000","time":"2016-10-18T19:25:53.107Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 16:00:00--Leicester City FC - Crystal Palace FC *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-18T19:25:53.107Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"21 10 2016 - 16:00:00 Executing in  232447000","time":"2016-10-18T19:25:53.108Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 15:00:00 Executing in  315247000","time":"2016-10-18T19:25:53.109Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 15:55:00 Executing in  318547000","time":"2016-10-18T19:25:53.109Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 16:00:00--Swansea City FC - Watford FC *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-18T19:25:53.109Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"21 10 2016 - 16:00:00 Executing in  232447000","time":"2016-10-18T19:25:53.109Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 15:00:00 Executing in  315247000","time":"2016-10-18T19:25:53.110Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 15:55:00 Executing in  318547000","time":"2016-10-18T19:25:53.110Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 16:00:00--West Ham United FC - Sunderland AFC *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-18T19:25:53.110Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"21 10 2016 - 18:30:00 Executing in  241447000","time":"2016-10-18T19:25:53.110Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 17:30:00 Executing in  324247000","time":"2016-10-18T19:25:53.111Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 18:25:00 Executing in  327547000","time":"2016-10-18T19:25:53.111Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 18:30:00--Liverpool FC - West Bromwich Albion FC *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-18T19:25:53.111Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 14:30:00 Executing in  313447000","time":"2016-10-18T19:25:53.111Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"23 10 2016 - 13:30:00 Executing in  396247000","time":"2016-10-18T19:25:53.112Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"23 10 2016 - 14:25:00 Executing in  399547000","time":"2016-10-18T19:25:53.112Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"23 10 2016 - 14:30:00--Manchester City FC - Southampton FC *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-18T19:25:53.112Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"22 10 2016 - 17:00:00 Executing in  322447000","time":"2016-10-18T19:25:53.112Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"23 10 2016 - 16:00:00 Executing in  405247000","time":"2016-10-18T19:25:53.112Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"23 10 2016 - 16:55:00 Executing in  408547000","time":"2016-10-18T19:25:53.113Z","v":0}
+{"name":"foo","hostname":"davher890-sports-informer-3811261","pid":6759,"level":30,"msg":"23 10 2016 - 17:00:00--Chelsea FC - Manchester United FC *1 day*  *1 hour*  *5 minutes* ","time":"2016-10-18T19:25:53.113Z","v":0}
