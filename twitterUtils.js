@@ -24,8 +24,7 @@ module.exports = {
         }, function(error, tweet, response) {
             if (error) {
                 logger.info('Error', error);
-            }
-            else {
+            } else {
                 logger.info('Tweet', tweet);
                 // console.log(tweet); // Tweet body.
                 // console.log(response); // Raw response object.
