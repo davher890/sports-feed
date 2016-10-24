@@ -31,6 +31,12 @@ function init() {
         var logger = bunyan.createLogger({
           name: 'foo',
           streams: [{
+            level : 'error',
+            path: './log/'+key+'-warn-err.log',
+            // `type: 'file'` is implied
+          },
+          {
+            level : 'info',
             path: './log/'+key+'.log',
             // `type: 'file'` is implied
           }]
