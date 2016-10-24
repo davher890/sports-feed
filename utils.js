@@ -2,7 +2,6 @@ var request = require('request');
 var moment = require('moment');
 var schedule = require('node-schedule');
 var twitterUtils = require('./twitterUtils');
-var bunyan = require('bunyan');
 var logger;
 
 module.exports = {
@@ -39,8 +38,7 @@ module.exports = {
         getMatchInfo(match._links.self.href, function(error, body) {
             if (error) {
                 logger.info('Error getting match info');
-            }
-            else {
+            } else {
                 match.info = JSON.parse(body);
                 logger.info('1 day ' + match.homeTeamName + ' - ' + match.awayTeamName);
                 var date = matchDate.format('HH:mm:ss');
@@ -53,9 +51,8 @@ module.exports = {
     sendOneHourBeforeMessage: function(match, matchDate) {
         getMatchInfo(match._links.self.href, function(error, body) {
             if (error) {
-                logger.info('Error getting match info');
-            }
-            else {
+                logger.err('Error getting match info');
+            } else {
                 match.info = JSON.parse(body);
                 logger.info('1 hour ' + match.homeTeamName + ' - ' + match.awayTeamName);
                 var date = matchDate.format('HH:mm:ss');
@@ -73,9 +70,8 @@ module.exports = {
     sendFiveMinutesBeforeMessage: function(match, matchDate, getTextFunction) {
         getMatchInfo(match._links.self.href, function(error, body) {
             if (error) {
-                logger.info('Error getting match info', error);
-            }
-            else {
+                logger.err('Error getting match info', error);
+            } else {
                 match.info = JSON.parse(body);
                 logger.info('5 minutes ' + match.homeTeamName + ' - ' + match.awayTeamName);
                 var text = match.homeTeamName + ' - ' + match.awayTeamName + '.';
@@ -91,9 +87,8 @@ module.exports = {
     sendResultChangeMessage: function(match) {
         getMatchInfo(match._links.self.href, function(error, body) {
             if (error) {
-                logger.info('Error getting match info');
-            }
-            else {
+                logger.err('Error getting match info');
+            } else {
                 var info = JSON.parse(body);
                 var goalsHomeTeam = JSON.parse(JSON.stringify(info.fixture.result.goalsHomeTeam));
                 var goalsAwayTeam = JSON.parse(JSON.stringify(info.fixture.result.goalsAwayTeam));
