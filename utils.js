@@ -35,59 +35,71 @@ module.exports = {
     },
 
     sendOneDayBeforeMessage: function(match, matchDate) {
-        getMatchInfo(match._links.self.href, function(error, body) {
-            if (error) {
-                logger.info('Error getting match info');
-            } else {
-                match.info = JSON.parse(body);
-                logger.info('1 day ' + match.homeTeamName + ' - ' + match.awayTeamName);
-                var date = matchDate.format('HH:mm:ss');
-                var text = 'Mañana a las ' + date + ', ' + match.homeTeamName + ' - ' + match.awayTeamName + '.';
-                twitterUtils.postTweet(text);
-            }
-        });
+        if (match._links.self.href) {
+            logger.error('Error getting (one day) match match data. Url not found', match);
+        } else {
+            getMatchInfo(match._links.self.href, function(error, body) {
+                if (error) {
+                    logger.info('Error getting match info');
+                } else {
+                    match.info = JSON.parse(body);
+                    logger.info('1 day ' + match.homeTeamName + ' - ' + match.awayTeamName);
+                    var date = matchDate.format('HH:mm:ss');
+                    var text = 'Mañana a las ' + date + ', ' + match.homeTeamName + ' - ' + match.awayTeamName + '.';
+                    twitterUtils.postTweet(text);
+                }
+            });
+        }
     },
 
     sendOneHourBeforeMessage: function(match, matchDate) {
-        getMatchInfo(match._links.self.href, function(error, body) {
-            if (error) {
-                logger.err('Error getting match info');
-            } else {
-                match.info = JSON.parse(body);
-                logger.info('1 hour ' + match.homeTeamName + ' - ' + match.awayTeamName);
-                var date = matchDate.format('HH:mm:ss');
-                var text = 'Hoy a las ' + date + ', ' + match.homeTeamName + ' - ' + match.awayTeamName + '.';
-                var countMatches = match.info.head2head.count;
-                var countHome = match.info.head2head.homeTeamWins
-                if (countMatches) {
-                    text += 'El equipo local ha ganado ' + countHome + ' de los ultimos ' + countMatches + ' partidos.'
+        if (match._links.self.href) {
+            logger.error('Error getting (one hour) match data. Url not found', match);
+        } else {
+            getMatchInfo(match._links.self.href, function(error, body) {
+                if (error) {
+                    logger.error('Error getting match info');
+                } else {
+                    match.info = JSON.parse(body);
+                    logger.info('1 hour ' + match.homeTeamName + ' - ' + match.awayTeamName);
+                    var date = matchDate.format('HH:mm:ss');
+                    var text = 'Hoy a las ' + date + ', ' + match.homeTeamName + ' - ' + match.awayTeamName + '.';
+                    var countMatches = match.info.head2head.count;
+                    var countHome = match.info.head2head.homeTeamWins
+                    if (countMatches) {
+                        text += 'El equipo local ha ganado ' + countHome + ' de los ultimos ' + countMatches + ' partidos.'
+                    }
+                    twitterUtils.postTweet(text);
                 }
-                twitterUtils.postTweet(text);
-            }
-        });
+            });
+        }
     },
 
     sendFiveMinutesBeforeMessage: function(match, matchDate, getTextFunction) {
-        getMatchInfo(match._links.self.href, function(error, body) {
-            if (error) {
-                logger.err('Error getting match info', error);
-            } else {
-                match.info = JSON.parse(body);
-                logger.info('5 minutes ' + match.homeTeamName + ' - ' + match.awayTeamName);
-                var text = match.homeTeamName + ' - ' + match.awayTeamName + '.';
-                text += '. A falta de 5 minutos para el comienzo las apuestas estan asi: ' +
-                    match.info.fixture.odds.homeWin + '-' +
-                    match.info.fixture.odds.draw + '-' +
-                    match.info.fixture.odds.awayWin;
-                twitterUtils.postTweet(text);
-            }
-        });
+        if (match._links.self.href) {
+            logger.error('Error getting (five minutes) match match data. Url not found', match);
+        } else {
+            getMatchInfo(match._links.self.href, function(error, body) {
+                if (error) {
+                    logger.error('Error getting match info', error);
+                } else {
+                    match.info = JSON.parse(body);
+                    logger.info('5 minutes ' + match.homeTeamName + ' - ' + match.awayTeamName);
+                    var text = match.homeTeamName + ' - ' + match.awayTeamName + '.';
+                    text += '. A falta de 5 minutos para el comienzo las apuestas estan asi: ' +
+                        match.info.fixture.odds.homeWin + '-' +
+                        match.info.fixture.odds.draw + '-' +
+                        match.info.fixture.odds.awayWin;
+                    twitterUtils.postTweet(text);
+                }
+            });
+        }
     },
 
     sendResultChangeMessage: function(match) {
         getMatchInfo(match._links.self.href, function(error, body) {
             if (error) {
-                logger.err('Error getting match info');
+                logger.error('Error getting match info');
             } else {
                 var info = JSON.parse(body);
                 var goalsHomeTeam = JSON.parse(JSON.stringify(info.fixture.result.goalsHomeTeam));
@@ -107,17 +119,22 @@ module.exports = {
 
     createCron: function(momentDate, sendTextFunction, match, matchDate, now, callback) {
 
-        var timeout = momentDate.unix() - now.unix();
-        timeout = (timeout * 1000);
+        if (!sendTextFunction) {
+            logger.error('Error creating cron. Text function does not exist');
+        } else {
 
-        logger.info(momentDate.format('DD MM YYYY - HH:mm:ss'), 'Executing in ', timeout);
+            var timeout = momentDate.unix() - now.unix();
+            timeout = (timeout * 1000);
 
-        setTimeout(function() {
-            sendTextFunction(match, matchDate);
-            if (callback) {
-                callback();
-            }
-        }, timeout);
+            logger.info(momentDate.format('DD MM YYYY - HH:mm:ss'), 'Executing in ', timeout);
+
+            setTimeout(function() {
+                sendTextFunction(match, matchDate);
+                if (callback) {
+                    callback();
+                }
+            }, timeout);
+        }
     },
 
     scheduleMatches: function(jsonFile, parentLogger, callback) {
