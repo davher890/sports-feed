@@ -62,20 +62,10 @@ function init() {
 
 init();
 
-process.on('uncaughtException', function(err) {
-    // prevent infinite recursion
-    // process.removeListener('uncaughtException', arguments.callee);
+process.on('uncaughtException', (err) => {
+    processLog.err(err);
+});
 
-    // bonus: log the exception
-    processLog.fatal(err);
-
-    // if (typeof(processLog.streams[0]) !== 'object') return;
-
-    // throw the original exception once stream is closed
-    // processLog.streams[0].stream.on('close', function(streamErr, stream) {
-    //     throw err;
-    // });
-
-    // close stream, flush buffer to disk
-    // processLog.streams[0].stream.end();
+process.on('exit', (code) => {
+    processLog.err(`About to exit with code: ${code}`);
 });
