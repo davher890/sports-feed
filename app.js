@@ -43,7 +43,7 @@ function init() {
                     }]
                 });
                 if (error) {
-                    logger.err('Error:', error);
+                    logger.error('Error:', error);
                 } else {
                     var jsonFile = JSON.parse(body);
                     utils.scheduleMatches(jsonFile, logger, function(lastDate) {
@@ -63,9 +63,9 @@ function init() {
 init();
 
 process.on('uncaughtException', (err) => {
-    processLog.err(err);
+    processLog.error(err);
 });
 
 process.on('exit', (code) => {
-    processLog.err(`About to exit with code: ${code}`);
+    processLog.error(`About to exit with code: ${code}`);
 });
