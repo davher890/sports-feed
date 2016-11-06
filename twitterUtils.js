@@ -23,7 +23,7 @@ module.exports = {
             status: text
         }, function(error, tweet, response) {
             if (error) {
-                logger.info('Error', error);
+                logger.error('Error', error);
             } else {
                 logger.info('Tweet', tweet);
                 // console.log(tweet); // Tweet body.

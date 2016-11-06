@@ -40,7 +40,7 @@ module.exports = {
         } else {
             getMatchInfo(match._links.self.href, function(error, body) {
                 if (error) {
-                    logger.info('Error getting match info');
+                    logger.error('Error getting match info');
                 } else {
                     match.info = JSON.parse(body);
                     logger.info('1 day ' + match.homeTeamName + ' - ' + match.awayTeamName);
@@ -97,24 +97,27 @@ module.exports = {
     },
 
     sendResultChangeMessage: function(match) {
-        getMatchInfo(match._links.self.href, function(error, body) {
-            if (error) {
-                logger.error('Error getting match info');
-            } else {
-                var info = JSON.parse(body);
-                var goalsHomeTeam = JSON.parse(JSON.stringify(info.fixture.result.goalsHomeTeam));
-                var goalsAwayTeam = JSON.parse(JSON.stringify(info.fixture.result.goalsAwayTeam));
+        if (match._links.self.href) {
+            getMatchInfo(match._links.self.href, function(error, body) {
+                if (error || !body) {
+                    logger.error('Error getting match info or empty body');
+                } else {
+                    logger.info('Body received', body)
+                    var info = JSON.parse(body);
+                    var goalsHomeTeam = JSON.parse(JSON.stringify(info.fixture.result.goalsHomeTeam));
+                    var goalsAwayTeam = JSON.parse(JSON.stringify(info.fixture.result.goalsAwayTeam));
 
-                if (goalsHomeTeam && goalsAwayTeam && match.info && (goalsHomeTeam !== match.info.fixture.result.goalsHomeTeam ||
-                        goalsAwayTeam !== match.info.fixture.result.goalsAwayTeam)) {
-                    var text = match.homeTeamName + ' ' + match.info.fixture.result.goalsHomeTeam + ' : ' +
-                        match.info.fixture.result.goalsAwayTeam + ' ' + match.awayTeamName;
-                    // twitterUtils.postTweet(text);
-                    logger.info(text);
+                    if (goalsHomeTeam && goalsAwayTeam && match.info && (goalsHomeTeam !== match.info.fixture.result.goalsHomeTeam ||
+                            goalsAwayTeam !== match.info.fixture.result.goalsAwayTeam)) {
+                        var text = match.homeTeamName + ' ' + match.info.fixture.result.goalsHomeTeam + ' : ' +
+                            match.info.fixture.result.goalsAwayTeam + ' ' + match.awayTeamName;
+                        // twitterUtils.postTweet(text);
+                        logger.info(text);
+                    }
+                    match.info = body;
                 }
-                match.info = body;
-            }
-        });
+            });
+        }
     },
 
     createCron: function(momentDate, sendTextFunction, match, matchDate, now, callback) {
@@ -167,20 +170,23 @@ module.exports = {
                     // If the remaining time is bigger than a day
                     if ((matchDate - now) > 60 * 60 * 24) {
                         logText += ' *1 day* ';
-                        this.createCron(moment.unix(matchDate).subtract(1, 'days'), this.sendOneDayBeforeMessage, match, moment.unix(matchDate), moment.unix(now));
+                        var dayMomentDate = moment.unix(matchDate).clone();
+                        this.createCron(dayMomentDate.subtract(1, 'days'), this.sendOneDayBeforeMessage, match, dayMomentDate, moment.unix(now));
                     }
 
                     // If the remaining time is bigger than an hour
                     if ((matchDate - now) > 60 * 60) {
                         logText += ' *1 hour* ';
-                        this.createCron(moment.unix(matchDate).subtract(1, 'hours'), this.sendOneHourBeforeMessage, match, moment.unix(matchDate), moment.unix(now));
+                        var hourMomentDate = moment.unix(matchDate).clone();
+                        this.createCron(hourMomentDate.subtract(1, 'hours'), this.sendOneHourBeforeMessage, match, hourMomentDate, moment.unix(now));
                     }
 
                     // If the remaining time is bigger than 5 minutes
                     if ((matchDate - now) > 60 * 5) {
                         logText += ' *5 minutes* ';
+                        var fiveMomentDate = moment.unix(matchDate).clone();
                         var self = this;
-                        this.createCron(moment.unix(matchDate).subtract(5, 'minutes'), this.sendFiveMinutesBeforeMessage, match, moment.unix(matchDate), moment.unix(now),
+                        this.createCron(fiveMomentDate.subtract(5, 'minutes'), this.sendFiveMinutesBeforeMessage, match, fiveMomentDate, moment.unix(now),
                             function() {
                                 // In five minutes the match will start
                                 var interval = setInterval(function() {
