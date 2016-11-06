@@ -42,6 +42,7 @@ module.exports = {
                 if (error) {
                     logger.error('Error getting match info');
                 } else {
+                    logger.info('Body received', body)
                     match.info = JSON.parse(body);
                     logger.info('1 day ' + match.homeTeamName + ' - ' + match.awayTeamName);
                     var date = matchDate.format('HH:mm:ss');
@@ -60,6 +61,7 @@ module.exports = {
                 if (error) {
                     logger.error('Error getting match info');
                 } else {
+                    logger.info('Body received', body)
                     match.info = JSON.parse(body);
                     logger.info('1 hour ' + match.homeTeamName + ' - ' + match.awayTeamName);
                     var date = matchDate.format('HH:mm:ss');
@@ -83,6 +85,7 @@ module.exports = {
                 if (error) {
                     logger.error('Error getting match info', error);
                 } else {
+                    logger.info('Body received', body)
                     match.info = JSON.parse(body);
                     logger.info('5 minutes ' + match.homeTeamName + ' - ' + match.awayTeamName);
                     var text = match.homeTeamName + ' - ' + match.awayTeamName + '.';
