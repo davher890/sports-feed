@@ -18,7 +18,9 @@ var processLog = bunyan.createLogger({
 var urlObject = {
     'liga_santander': 'http://api.football-data.org/v1/soccerseasons/436/fixtures',
     'champions': 'http://api.football-data.org/v1/soccerseasons/426/fixtures',
-    'premier_league': 'http://api.football-data.org/v1/soccerseasons/440/fixtures'
+    'premier_league': 'http://api.football-data.org/v1/soccerseasons/440/fixtures',
+    'seria_a': 'http://api.football-data.org/v1/soccerseasons/438/fixtures',
+    'ligue_1': 'http://api.football-data.org/v1/soccerseasons/434/fixtures'
 };
 
 function init() {
@@ -45,7 +47,7 @@ function init() {
                 if (error) {
                     logger.error('Error:', error);
                 } else {
-                    log.info('Body received', body);
+                    logger.info('Body received', body);
                     var jsonFile = JSON.parse(body);
                     utils.scheduleMatches(jsonFile, logger, function(lastDate) {
                         lastDate = moment.unix(lastDate).add(2, 'hours').add(1, 'days').unix();
