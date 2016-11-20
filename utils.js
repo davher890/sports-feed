@@ -37,14 +37,13 @@ module.exports = {
     },
 
     sendOneDayBeforeMessage: function(match, matchDate) {
-        if (match._links.self.href) {
-            logger.error('Error getting (one day) match match data. Url not found', match);
+        if (!match._links.self.href) {
+            logger.error('Error getting (one day) match data. Url not found', match);
         } else {
             getMatchInfo(match._links.self.href, function(error, body) {
                 if (error) {
                     logger.error('Error getting match info');
                 } else {
-                    logger.info('Body received', body)
                     match.info = JSON.parse(body);
                     logger.info('1 day ' + match.homeTeamName + ' - ' + match.awayTeamName);
                     var date = matchDate.format('HH:mm:ss');
@@ -57,7 +56,7 @@ module.exports = {
     },
 
     sendOneHourBeforeMessage: function(match, matchDate) {
-        if (match._links.self.href) {
+        if (!match._links.self.href) {
             logger.error('Error getting (one hour) match data. Url not found', match);
         } else {
             getMatchInfo(match._links.self.href, function(error, body) {
@@ -81,8 +80,8 @@ module.exports = {
     },
 
     sendFiveMinutesBeforeMessage: function(match, matchDate, getTextFunction) {
-        if (match._links.self.href) {
-            logger.error('Error getting (five minutes) match match data. Url not found', match);
+        if (!match._links.self.href) {
+            logger.error('Error getting (five minutes) match data. Url not found', match);
         } else {
             getMatchInfo(match._links.self.href, function(error, body) {
                 if (error) {
@@ -103,7 +102,9 @@ module.exports = {
     },
 
     sendResultChangeMessage: function(match) {
-        if (match._links.self.href) {
+        if (!match._links.self.href) {
+            logger.error('Error getting (result change) match data. Url not found', match);
+        } else {
             getMatchInfo(match._links.self.href, function(error, body) {
                 if (error || !body) {
                     logger.error('Error getting match info or empty body');
@@ -162,9 +163,7 @@ module.exports = {
                 // Depending on the response of the api, add 2 hours or not
                 var matchDate = moment(match.date). /*add(2, 'hours').*/ unix();
 
-                // Add two hour because of the time zone
-                var now = moment().add(2, 'hours').unix();
-
+                var now = moment().unix();
                 if (matchDate > lastDate) {
                     lastDate = matchDate;
                 }
@@ -232,6 +231,10 @@ module.exports = {
         }
     }
 };
+
+function getFormatedDate(timestamp) {
+    return moment.unix(timestamp).format('DD MM YYYY - HH:mm:ss')
+}
 
 function getMatchInfo(matchUrl, callback) {
     var options = {
