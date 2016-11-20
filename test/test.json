@@ -1,0 +1,37 @@
+{
+    "_links": {
+        "self": {
+            "href": "http://api.football-data.org/v1/competitions/434/fixtures"
+        },
+        "competition": {
+            "href": "http://api.football-data.org/v1/competitions/434"
+        }
+    },
+    "count": 380,
+    "fixtures": [{
+        "_links": {
+            "self": {
+                "href": "http://api.football-data.org/v1/fixtures/152823"
+            },
+            "competition": {
+                "href": "http://api.football-data.org/v1/competitions/434"
+            },
+            "homeTeam": {
+                "href": "http://api.football-data.org/v1/teams/527"
+            },
+            "awayTeam": {
+                "href": "http://api.football-data.org/v1/teams/522"
+            }
+        },
+        "date": "2016-11-20T23:44:00Z",
+        "status": "TIMED",
+        "matchday": 13,
+        "homeTeamName": "AS Saint-Étienne",
+        "awayTeamName": "OGC Nice",
+        "result": {
+            "goalsHomeTeam": null,
+            "goalsAwayTeam": null
+        },
+        "odds": null
+    }]
+}
