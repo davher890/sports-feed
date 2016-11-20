@@ -47,7 +47,6 @@ function init() {
                 if (error) {
                     logger.error('Error:', error);
                 } else {
-                    logger.info('Body received', body);
                     var jsonFile = JSON.parse(body);
                     utils.scheduleMatches(jsonFile, logger, function(lastDate) {
                         lastDate = moment.unix(lastDate).add(2, 'hours').add(1, 'days').unix();

@@ -1,3 +1,5 @@
+'use strict';
+
 var request = require('request');
 var moment = require('moment');
 var schedule = require('node-schedule');
@@ -47,6 +49,7 @@ module.exports = {
                     logger.info('1 day ' + match.homeTeamName + ' - ' + match.awayTeamName);
                     var date = matchDate.format('HH:mm:ss');
                     var text = 'Mañana a las ' + date + ', ' + match.homeTeamName + ' - ' + match.awayTeamName + '.';
+                    logger.info('Sending tweet', text);
                     twitterUtils.postTweet(text);
                 }
             });
@@ -61,7 +64,6 @@ module.exports = {
                 if (error) {
                     logger.error('Error getting match info');
                 } else {
-                    logger.info('Body received', body)
                     match.info = JSON.parse(body);
                     logger.info('1 hour ' + match.homeTeamName + ' - ' + match.awayTeamName);
                     var date = matchDate.format('HH:mm:ss');
@@ -71,6 +73,7 @@ module.exports = {
                     if (countMatches) {
                         text += 'El equipo local ha ganado ' + countHome + ' de los ultimos ' + countMatches + ' partidos.'
                     }
+                    logger.info('Sending tweet', text);
                     twitterUtils.postTweet(text);
                 }
             });
@@ -85,14 +88,14 @@ module.exports = {
                 if (error) {
                     logger.error('Error getting match info', error);
                 } else {
-                    logger.info('Body received', body)
                     match.info = JSON.parse(body);
                     logger.info('5 minutes ' + match.homeTeamName + ' - ' + match.awayTeamName);
                     var text = match.homeTeamName + ' - ' + match.awayTeamName + '.';
                     text += '. A falta de 5 minutos para el comienzo las apuestas estan asi: ' +
                         match.info.fixture.odds.homeWin + '-' +
                         match.info.fixture.odds.draw + '-' +
-                        match.info.fixture.odds.awayWin;
+                        match.info.fixture.odds.awayWin
+                    logger.info('Sending tweet', text);
                     twitterUtils.postTweet(text);
                 }
             });
@@ -117,6 +120,7 @@ module.exports = {
                         // twitterUtils.postTweet(text);
                         logger.info(text);
                     }
+                    logger.info('Sending tweet', text);
                     match.info = body;
                 }
             });
