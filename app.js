@@ -17,10 +17,12 @@ var processLog = bunyan.createLogger({
 
 var urlObject = {
     'liga_santander': 'http://api.football-data.org/v1/soccerseasons/436/fixtures',
+    'liga_adelante': 'http://api.football-data.org/v1/soccerseasons/437/fixtures',
     'champions': 'http://api.football-data.org/v1/soccerseasons/426/fixtures',
     'premier_league': 'http://api.football-data.org/v1/soccerseasons/440/fixtures',
     'seria_a': 'http://api.football-data.org/v1/soccerseasons/438/fixtures',
-    'ligue_1': 'http://api.football-data.org/v1/soccerseasons/434/fixtures'
+    'ligue_1': 'http://api.football-data.org/v1/soccerseasons/434/fixtures',
+    'bundesliga': 'http://api.football-data.org/v1/soccerseasons/430/fixtures'
 };
 
 function init() {
