@@ -68,9 +68,28 @@ module.exports = {
                     var date = matchDate.format('HH:mm:ss');
                     var text = 'Hoy a las ' + date + ', ' + match.homeTeamName + ' - ' + match.awayTeamName + '.';
                     var countMatches = match.info.head2head.count;
-                    var countHome = match.info.head2head.homeTeamWins
-                    if (countMatches) {
-                        text += 'El equipo local ha ganado ' + countHome + ' de los ultimos ' + countMatches + ' partidos.'
+                    var countHome = match.info.head2head.homeTeamWins;
+                    var countAway = match.info.head2head.awayTeamWins;
+                    var winAway = match.info.head2head.lastWinAwayTeam;
+                    var winHome = match.info.head2head.lastWinAwayTeam;
+                    if (countMatches && countHome && countAway) {
+                        if (countHome > countAway) {
+                            var percentHome = countHome * 100 / countMatches;
+                            // Home team wins always
+                            if (percentHome > 75 && winAway) {
+                                // Last away win
+                                text += 'La ultima victoria de ' + match.awayTeamName + ' fue por ' + winAway.result.goalsHomeTeam + '-' + winAway.result.goalsAwayTeam;
+                            }
+                            // Away team wins always
+                            else if (percentHome < 25 && winHome) {
+                                // Last home winHome
+                                text += 'La ultima victoria de ' + match.homeTeamName + ' fue por ' + winHome.result.goalsHomeTeam + '-' + winHome.result.goalsAwayTeam;
+                            } else {
+                                if (countMatches) {
+                                    text += 'El equipo local ha ganado ' + countHome + ' de los ultimos ' + countMatches + ' partidos.'
+                                }
+                            }
+                        }
                     }
                     logger.info('Sending tweet', text);
                     twitterUtils.postTweet(text);
@@ -89,11 +108,14 @@ module.exports = {
                 } else {
                     match.info = JSON.parse(body);
                     logger.info('5 minutes ' + match.homeTeamName + ' - ' + match.awayTeamName);
-                    var text = match.homeTeamName + ' - ' + match.awayTeamName + '.';
-                    text += '. A falta de 5 minutos para el comienzo las apuestas estan asi: ' +
-                        match.info.fixture.odds.homeWin + '-' +
-                        match.info.fixture.odds.draw + '-' +
-                        match.info.fixture.odds.awayWin
+                    var text = match.homeTeamName + ' - ' + match.awayTeamName + '. Faltan 5 minutos para el comienzo.';
+                    var odds = match.info.fixture.odds;
+                    if (odds && odds.homeWin && odds.draw && odds.awayWin) {
+                        text += ' Asi estan las apuestas: ' +
+                            odds.homeWin + '-' +
+                            odds.draw + '-' +
+                            odds.awayWin;
+                    }
                     logger.info('Sending tweet', text);
                     twitterUtils.postTweet(text);
                 }
@@ -119,9 +141,8 @@ module.exports = {
                         var text = match.homeTeamName + ' ' + match.info.fixture.result.goalsHomeTeam + ' : ' +
                             match.info.fixture.result.goalsAwayTeam + ' ' + match.awayTeamName;
                         // twitterUtils.postTweet(text);
-                        logger.info(text);
+                        logger.info('Sending tweet', text);
                     }
-                    logger.info('Sending tweet', text);
                     match.info = body;
                 }
             });
