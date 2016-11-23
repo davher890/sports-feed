@@ -70,26 +70,23 @@ module.exports = {
                     var countMatches = match.info.head2head.count;
                     var countHome = match.info.head2head.homeTeamWins;
                     var countAway = match.info.head2head.awayTeamWins;
+                    var winHome = match.info.head2head.lastWinHomeTeam;
                     var winAway = match.info.head2head.lastWinAwayTeam;
-                    var winHome = match.info.head2head.lastWinAwayTeam;
                     if (countMatches && countHome && countAway) {
-                        if (countHome > countAway) {
-                            var percentHome = countHome * 100 / countMatches;
-                            // Home team wins always
-                            if (percentHome > 75 && winAway) {
-                                // Last away win
-                                text += 'La ultima victoria de ' + match.awayTeamName + ' fue por ' + winAway.result.goalsHomeTeam + '-' + winAway.result.goalsAwayTeam;
-                            }
-                            // Away team wins always
-                            else if (percentHome < 25 && winHome) {
-                                // Last home winHome
-                                text += 'La ultima victoria de ' + match.homeTeamName + ' fue por ' + winHome.result.goalsHomeTeam + '-' + winHome.result.goalsAwayTeam;
-                            } else {
-                                if (countMatches) {
-                                    text += 'El equipo local ha ganado ' + countHome + ' de los ultimos ' + countMatches + ' partidos.'
-                                }
-                            }
+                        var percentHome = countHome * 100 / countMatches;
+                        // Home team wins always
+                        if (percentHome > 75 && winAway) {
+                            // Last away win
+                            text += 'La ultima victoria de ' + match.awayTeamName + ' fue por ' + winAway.result.goalsHomeTeam + '-' + winAway.result.goalsAwayTeam;
                         }
+                        // Away team wins always
+                        else if (percentHome < 25 && winHome) {
+                            // Last home winHome
+                            text += 'La ultima victoria de ' + match.homeTeamName + ' fue por ' + winHome.result.goalsHomeTeam + '-' + winHome.result.goalsAwayTeam;
+                        } else {
+                            text += 'El equipo local ha ganado ' + countHome + ' de los ultimos ' + countMatches + ' partidos.'
+                        }
+
                     }
                     logger.info('Sending tweet', text);
                     twitterUtils.postTweet(text);
